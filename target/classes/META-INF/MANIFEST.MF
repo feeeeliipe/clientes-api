@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: clientes-api
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: felipegoncalves
+Built-By: felipe.goncalves
 Implementation-Vendor-Id: br.com.felipe.clientes-api
-Build-Jdk: 1.8.0_161
+Build-Jdk: 1.8.0_171
 Implementation-URL: http://projects.spring.io/spring-boot/clientes-api
  /
 Created-By: Maven Integration for Eclipse

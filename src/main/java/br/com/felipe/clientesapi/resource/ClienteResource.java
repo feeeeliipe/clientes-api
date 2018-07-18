@@ -25,25 +25,25 @@ public class ClienteResource {
 
 	@GetMapping("/clientes")
 	public List<Cliente> buscarTodos() {
-		System.out.println("Buscando todos os clientes...");
+		System.out.println("ClienteResourceLOG: Buscando todos os clientes...");
 		return clienteRepository.findAll();
 	}
 	
 	@GetMapping("/clientes/{id}")
 	public Cliente buscaPorId(@PathVariable Long id) {
-		System.out.println("Buscando cliente por id "+id+"...");
+		System.out.println("ClienteResourceLOG: Buscando cliente por id "+id+"...");
 		return clienteRepository.findOne(id);
 	}
 	
 	@PostMapping("/clientes")
 	public Cliente salvar(@RequestBody @Valid Cliente cliente) {
-		System.out.println("Salvando cliente...");
+		System.out.println("ClienteResourceLOG: Salvando cliente...");
 		return clienteRepository.save(cliente);
 	}
 	
 	@DeleteMapping("/clientes/{id}")
 	public void remover(@PathVariable Long id) {
-		System.out.println("Chamou o remover");
+		System.out.println("ClienteResourceLOG: Excluindo cliente...");
 		clienteRepository.delete(id);
 	}
 
