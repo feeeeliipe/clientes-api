@@ -12,43 +12,16 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	private String telefone;
-	private String endereco;
-	private String numend;
-	private String bairro;
+	private String descricao;
 	
 	public Cliente() {
 		
 	}
 	
-	public String getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
-	}
-
-	public String getNumend() {
-		return numend;
-	}
-
-	public void setNumend(String numend) {
-		this.numend = numend;
-	}
-
-	public String getBairro() {
-		return bairro;
-	}
-
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
-	}
-
-	public Cliente(String nome, String telefone) {
+	public Cliente(String nome, String descricao) {
 		super();
 		this.nome = nome;
-		this.telefone = telefone;
+		this.descricao = descricao;
 	}
 	
 
@@ -68,11 +41,15 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getTelefone() {
-		return telefone;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
+	
+	
+
+	
 }
