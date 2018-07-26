@@ -12,15 +12,9 @@ public class Cliente {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	
+
 	public Cliente() {
 		
-	}
-	
-	public Cliente(Long id)
-	{
-		super();
-		this.id = id;
 	}
 	
 	public Cliente(String nome) {
@@ -44,6 +38,7 @@ public class Cliente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 
 	
 }

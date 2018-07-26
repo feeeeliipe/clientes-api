@@ -43,7 +43,5 @@ public class Tarefa {
 	}
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
-	}
-	
-	
+	}	
 }
